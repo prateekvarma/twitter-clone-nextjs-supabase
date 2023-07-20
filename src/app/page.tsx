@@ -1,6 +1,12 @@
 import { BiHomeCircle, BiUser } from 'react-icons/bi';
 import { HiOutlineHashtag } from 'react-icons/hi';
-import { BsBell, BsBookmark, BsTwitter, BsEnvelope } from 'react-icons/bs';
+import {
+  BsBell,
+  BsBookmark,
+  BsTwitter,
+  BsEnvelope,
+  BsThreeDots,
+} from 'react-icons/bs';
 import Link from 'next/link';
 
 const NAVIGATION_ITEMS = [
@@ -39,8 +45,8 @@ export default function Home() {
     <div className='w-full h-full flex justify-center items-center relative bg-black'>
       <div className='max-w-screen-xl w-full flex relative'>
         {/* Left section */}
-        <section className='fixed w-[275px] flex flex-col items-stretch h-screen space-y-4'>
-          <div className='flex-col items-stretch h-screen space-y-4 my-4'>
+        <section className='fixed w-[275px] flex flex-col items-stretch h-screen'>
+          <div className='flex flex-col items-stretch h-full space-y-4 mt-4'>
             {NAVIGATION_ITEMS.map((item) => {
               return (
                 <Link
@@ -59,7 +65,18 @@ export default function Home() {
               Tweet
             </button>
           </div>
-          <div>at the bottom</div>
+          <button className='rounded-full flex items-center space-x-2 m-4 bg-transparent p-4 text-center hover:bg-white/10 transition duration-200 w-full justify-between'>
+            <div className='flex items-center space-x-2'>
+              <div className='rounded-full bg-slate-400 w-10 h-10'></div>
+              <div className='text-left text-sm'>
+                <div className='font-semibold'>Name of account</div>
+                <div>@handle</div>
+              </div>
+            </div>
+            <div>
+              <BsThreeDots />
+            </div>
+          </button>
         </section>
         <main></main>
         <section></section>
