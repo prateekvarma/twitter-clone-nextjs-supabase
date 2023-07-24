@@ -42,7 +42,7 @@ const NAVIGATION_ITEMS = [
 
 const LeftSidebar = () => {
   return (
-    <section className='fixed w-[275px] flex flex-col items-stretch h-screen px-6'>
+    <section className='sticky top-0 w-[20%] flex flex-col items-stretch h-screen'>
           <div className='flex flex-col items-stretch h-full space-y-4 mt-4'>
             {NAVIGATION_ITEMS.map((item) => {
               return (
@@ -58,7 +58,7 @@ const LeftSidebar = () => {
                 </Link>
               );
             })}
-            <button className='rounded-full m-4 bg-primary p-4 text-2xl text-center hover:bg-opacity-70 transition duration-200'>
+            <button className='rounded-full bg-primary p-4 text-2xl text-center hover:bg-opacity-70 transition duration-200'>
               Tweet
             </button>
           </div>
