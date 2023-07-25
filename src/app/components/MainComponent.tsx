@@ -4,7 +4,7 @@ import { IoStatsChart, IoShareOutline } from 'react-icons/io5';
 
 const MainComponent = () => {
   return (
-    <main className='top-0 flex w-[60%] h-full min-h-screen flex-col border-l-[0.5px] border-r-[0.5px]'>
+    <main className='top-0 flex w-full h-full min-h-screen flex-col border-l-[0.5px] border-r-[0.5px]'>
       <h1 className='text-xl font-bold p-6 backdrop-blur bg-black/10 sticky top-0'>
         Home
       </h1>
